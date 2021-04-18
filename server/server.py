@@ -9,7 +9,7 @@ from random import randint
 socketServer = socket(AF_INET, SOCK_STREAM)
 socketServer.bind(("127.0.0.1", 2121))
 socketServer.listen(5)
-os.chdir("files")
+os.chdir("test_files_for_download")
 serverPath = os.getcwd()
 os.chdir(os.getcwd())
 print("The server is ready to connect to the cilent...")
